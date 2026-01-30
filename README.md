@@ -79,6 +79,29 @@ code --add-mcp '{"name":"DevBox","command":"npx","args":["-y","@microsoft/devbox
 
 For detailed MCP installation steps on VS Code, see [here](https://code.visualstudio.com/docs/copilot/chat/mcp-servers).
 
+#### 🚀 Install on GitHub Copilot CLI
+
+Use the Copilot CLI to interactively add the MCP server:
+
+```bash
+/mcp add
+```
+
+Or add to `~/.copilot/mcp-config.json`:
+
+```json
+{
+    "mcpServers": {
+        "DevBox": {
+            "command": "npx",
+            "args": ["-y", "@microsoft/devbox-mcp@latest"]
+        }
+    }
+}
+```
+
+For more information, see the [GitHub Copilot CLI documentation](https://docs.github.com/en/copilot/concepts/agents/about-copilot-cli).
+
 ## VSCode Installation Demo
 
 ![VSCode Installation Demo](docs/MCP-Install-Works.gif)
